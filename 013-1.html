@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,
+        td {
+        padding: 5px;
+        }
+        tr>td:nth-child(3),
+        tr>td:nth-child(4),
+        tr>td:nth-child(5),
+        tr>td:nth-child(6) {
+            text-align: right;
+        }
+        /* tr:nth-child(even)>td {
+            background-color: gray;
+        } */
+        /* tr 안에있는 홀수 odd 짝수 even  */
+        tr>td:nth-child(3),
+        tr>td:nth-child(4){
+            background-color: rgb(153, 218, 127);
+        }
+        /* tr>td:nth-child(3){
+            background-color: rgb(153, 218, 127);
+        } */
+        
+        tr:nth-child(1)>th:nth-child(3){
+            background-color: rgb(153, 218, 127);
+        }
+        tr:nth-child(2)>th:nth-child(1),
+        tr:nth-child(2)>th:nth-child(2){
+            background-color: rgb(153, 218, 127);
+        }
+        tr>td:nth-child(5),
+        tr>td:nth-child(6){
+        background-color: rgb(119, 241, 245);
+        }
+        /* tr>td:nth-child(3){
+        background-color: rgb(153, 218, 127);
+        } */
+
+        tr:nth-child(1)>th:nth-child(4){
+        background-color: rgb(119, 241, 245);
+        }
+        tr:nth-child(2)>th:nth-child(3){
+        background-color: rgb(119, 241, 245);
+        }
+        tr:nth-child(2)>th:nth-child(4){
+        background-color: rgb(119, 241, 245);
+        }
+        tr:nth-child(6)>th:nth-child(5),
+        tr:nth-child(6)>th:nth-child(6){
+        background-color: rgb(119, 241, 245);
+        }
+
+        /* 찾고자하는 열 */
+    </style>
+</head>
+
+<body>
+    <table style="width:100%;">
+        <tr>
+            <th rowspan="2">출발역</th> <!-- 위아래 셀병합 -->
+            <th rowspan="2">도착역</tH> <!-- 위아래 셀병합 -->
+            <th colspan="2" style="text-align: center;">현재운임</th> <!-- 좌우 셀병합 -->
+            <th colspan="2" style="text-align: center;">2020년 중앙선 전 구간 개통 시 <br> 청량리~서원주 구간 '준고속 서비스'</th> <!-- 좌우 셀병합 -->
+        </tr>
+        <tr>
+            <th>일반실(A)</th>
+            <th>우등실</th>
+            <th>일반실(B)</th>
+            <th>우등실</th>
+        </tr>
+        <tr align="center">
+            <td>청량리</td>
+            <td>원주</td>
+            <td>10,110</td>
+            <td>13,100</td>
+            <td>13,300</td>
+            <td>16,300</td>
+        </tr>
+        <tr align="center">
+            <td>양평</td>
+            <td>원주</td>
+            <td>8,410</td>
+            <td>11,400</td>
+            <td>8,400</td>
+            <td>11,400</td>
+        </tr>
+        <tr align="center">
+            <td>원주</td>
+            <td>제천</td>
+            <td >8,410</td>
+            <td>11,400</td>
+            <td>8,400</td>
+            <td>11,400</td>
+        </tr>
+        <tr align="center">
+            <td>원주</td>
+            <td>단양</td>
+            <td>8,410</td>
+            <td>11,400</td>
+            <td>8,410</td>
+            <td>11,400</td>
+        </tr>
+        <tr align="center">
+            <td>원주</td>
+            <td>풍기</td>
+            <td>10,400</td>
+            <td>13,400</td>
+            <td>10,400</td>
+            <td>13,400</td>
+        </tr>
+        <tr align="center">
+            <td>원주</td>
+            <td>영주</td>
+            <td>11,710</td>
+            <td>14,700</td>
+            <td>11,700</td>
+            <td>14,700</td>
+        </tr>
+        <tr align="center">
+            <td>원주</td>
+            <td>안동</td>
+            <td>14,900</td>
+            <td>17,900</td>
+            <td>14,900</td>
+            <td>17,900</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
